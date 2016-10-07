@@ -1,6 +1,6 @@
 function dcsm()
 run  matlab/vl_setupnn
-net =load('../caffe3/caffe-master/models/vgg16_N/pas12/WE20LSE/model/gpconv_aug_100000.mat'); 
+net =load('./gpconv.mat'); 
 
 
 %%%%%%%%%%parameters
@@ -123,7 +123,7 @@ for j3=1:numel(scalerate)%%% roop for size
 	end
 end
 ttt=find(cid==1);
-dir='temp2';
+path='.';
 surb1=zeros(imh,imw);
 for tt=1:numel(ttt)
 	sur=dsurfin{ttt(tt)};
@@ -132,11 +132,11 @@ for tt=1:numel(ttt)
 	surb1=max(surb1,sur);
 	sur=tanh(tha*sur);
 	sur(sur<=0)=1e-20;
-	sn=sprintf('%s/dcsm_%d.jpg',dir,tt);
+	sn=sprintf('%s/dcsm_%d.jpg',path,tt);
 	imwrite(sur/max(sur(:)),sn);
 end
 sur=surb1;
 sur=sur/max(sur(:));
 sur=tanh(tha*sur);
-sn=sprintf('%s/dcsm_%d.jpg',dir,0);
+sn=sprintf('%s/dcsm_%d.jpg',path,0);
 imwrite(sur/max(sur(:)),sn);
