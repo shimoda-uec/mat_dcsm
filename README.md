@@ -16,8 +16,8 @@ git clone https://github.com/shimoda-uec/mat_dcsm.git
 ```
 ##Usage 
 A main code is dcsm.m file.
-You need some modified files for MatConvNet and downloading network parameters for MatConvNet format to start up the code.
-modified file locations are following:
+You need some modified files for MatConvNet and downloading network parameters for MatConvNet format to start up.
+The modified file locations are following:  
 *matlab/vl_simplenn.m
 *matlab/vl_gbp.m
 *matlab/vl_nnsigmoid.m
