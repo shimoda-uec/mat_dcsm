@@ -18,10 +18,11 @@ git clone https://github.com/shimoda-uec/mat_dcsm.git
 A main code is dcsm.m file.
 You need some modified files for MatConvNet and downloading network parameters for MatConvNet format to start up.
 The modified file locations are following:  
-*matlab/vl_simplenn.m
-*matlab/vl_gbp.m
-*matlab/vl_nnsigmoid.m
-*matlab/vl_nnrelu2.m
+
++matlab/vl_simplenn.m  
++matlab/vl_gbp.m  
++matlab/vl_nnsigmoid.m  
++matlab/vl_nnrelu2.m  
 
 Trained network model is here [MatConvNet model](http://mm.cs.uec.ac.jp/shimoda-k/models/mp512_iter_20000.caffemodel).
 ##License and Citation
