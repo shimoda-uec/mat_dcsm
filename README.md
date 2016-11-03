@@ -23,7 +23,7 @@ The modified file locations are following:
 + matlab/vl_nnsigmoid.m  
 + matlab/vl_nnrelu2.m  
 
-Trained network model is here [MatConvNet model](http://mm.cs.uec.ac.jp/shimoda-k/models/mp512_iter_20000.caffemodel).
+Trained network model is here [MatConvNet model](http://mm.cs.uec.ac.jp/shimoda-k/models/gpconv.mat).
 ##License and Citation
 Please cite our paper if it helps your research:
 ```
